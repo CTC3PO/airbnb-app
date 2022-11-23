@@ -17,16 +17,15 @@ import "react-date-range/dist/styles.css"; // main style file
 import "react-date-range/dist/theme/default.css"; // theme css file
 import { DateRangePicker } from "react-date-range";
 
-function Header() {
+function Header({ placeholder }) {
   const router = useRouter();
   //states
   const [searchInput, setSearchInput] = useState("");
+  const [noOfGuests, setNoOfGuests] = useState(1);
 
-  //daterange range:
+  //start and end Date and range
   const [startDate, setStartDate] = useState(new Date());
   const [endDate, setEndDate] = useState(new Date());
-
-  const [noOfGuests, setNoOfGuests] = useState(1);
 
   const selectionRange = {
     startDate: startDate,
@@ -77,7 +76,7 @@ function Header() {
           onChange={(e) => setSearchInput(e.target.value)}
           className="flex-grow pl-5 bg-transparent outline-none text-sm text-gray-600 placeholder-gray-400"
           type="text"
-          placeholder="Start your search"
+          placeholder={placeholder || "Start your search"}
         />
         <SearchIcon
           className="hidden md:inline-flex h-8 bg-red-400 text-white

@@ -2,6 +2,11 @@
 module.exports = {
   reactStrictMode: true,
   images: {
-    domains: ["i.ibb.co", "links.papareact.com", "jsonkeeper.com"],
+    domains: [
+      "i.ibb.co",
+      "links.papareact.com",
+      "jsonkeeper.com",
+      "api.npoint.io",
+    ],
   },
 };
