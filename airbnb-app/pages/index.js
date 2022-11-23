@@ -46,7 +46,6 @@ export default function Home({ exploreData, cardsData }) {
             {exploreData?.map(({ img, distance, location }) => (
               <SmallCard
                 key={img}
-                s
                 img={img}
                 location={location}
                 distance={distance}
