@@ -36,7 +36,7 @@ export default function InfoCard({
             {star}
           </p>
 
-          <div className="">
+          <div>
             <p className="text-lg font-semibold lg:text-2xl">{price}</p>
             <p className="text-right font-extralight">{total}</p>
           </div>

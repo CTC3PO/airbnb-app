@@ -9,4 +9,10 @@ module.exports = {
       "api.npoint.io",
     ],
   },
+
+  //add environment variable for using Mapbox
+  env: {
+    mapbox_key:
+      "pk.eyJ1IjoiY2hhdXRyYW5jbXQyNiIsImEiOiJjbGF1NDlmaGgwMnMyM3ZwbTh6MDB0dWE3In0.ULfl6La3PplRKOpfUKEyPA",
+  },
 };
